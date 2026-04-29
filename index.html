@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoTrace Prototype | E-Waste Tracking & Lifecycle Pollution Management</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="#top">
+        <span class="brand-mark">E</span>
+        <span class="brand-text">EcoTrace</span>
+      </a>
+      <nav class="site-nav">
+        <a href="#dashboard">Dashboard</a>
+        <a href="#problem">Problem</a>
+        <a href="#lifecycle">Lifecycle</a>
+        <a href="#action">Prototype Form</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Prototype Demo</p>
+          <h1>Track e-waste before it turns into toxic pollution.</h1>
+          <p class="hero-text">
+            This prototype shows how a digital e-waste platform can register discarded electronics,
+            flag pollution risks, route items to formal recyclers, and measure what gets reused,
+            recovered, or safely dismantled.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#dashboard">Open Dashboard</a>
+            <a class="button secondary" href="#action">Create Tracking Request</a>
+          </div>
+          <div class="hero-metrics">
+            <article>
+              <strong>1,284</strong>
+              <span>Devices currently under active tracking</span>
+            </article>
+            <article>
+              <strong>82%</strong>
+              <span>Materials diverted from unsafe disposal streams</span>
+            </article>
+            <article>
+              <strong>17</strong>
+              <span>Verified recovery partners connected in one chain</span>
+            </article>
+          </div>
+        </div>
+
+        <div class="hero-panel">
+          <div class="panel-card pulse-card">
+            <p>Regional Alert</p>
+            <strong>Battery Risk Detected</strong>
+            <span>12 mixed loads require sealed handling before transport.</span>
+          </div>
+          <div class="panel-grid">
+            <div class="panel-card">
+              <span class="panel-label">Hazard Scan</span>
+              <strong>Lead, lithium, mercury</strong>
+              <p>Items are tagged before entering dismantling or storage zones.</p>
+            </div>
+            <div class="panel-card offset">
+              <span class="panel-label">Recovery Value</span>
+              <strong>$48.2K potential</strong>
+              <p>Recoverable copper, aluminum, boards, and reusable components.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="prototype section" id="dashboard">
+        <div class="section-heading">
+          <p class="eyebrow">Interactive Prototype</p>
+          <h2>An operations dashboard for collection teams, recyclers, and compliance managers.</h2>
+        </div>
+
+        <div class="dashboard-shell">
+          <aside class="dashboard-sidebar">
+            <div class="sidebar-block">
+              <p class="sidebar-title">Workflow</p>
+              <button class="tab-button active" type="button" data-tab="intake">Intake Queue</button>
+              <button class="tab-button" type="button" data-tab="routing">Routing Map</button>
+              <button class="tab-button" type="button" data-tab="impact">Impact Report</button>
+            </div>
+            <div class="sidebar-block mini-stat">
+              <span>Open alerts</span>
+              <strong id="alertCount">06</strong>
+              <p>Priority loads waiting for safe routing</p>
+            </div>
+          </aside>
+
+          <div class="dashboard-main">
+            <section class="tab-panel active" id="tab-intake">
+              <div class="panel-header">
+                <div>
+                  <p class="eyebrow small">Intake Queue</p>
+                  <h3>Incoming e-waste batches</h3>
+                </div>
+                <span class="badge">Live Prototype</span>
+              </div>
+              <div class="device-grid" id="deviceGrid">
+                <article class="device-card risk-high">
+                  <div class="device-top">
+                    <strong>Batch EW-204</strong>
+                    <span class="risk-chip red">High risk</span>
+                  </div>
+                  <p>Damaged lithium batteries from a college hostel disposal drive.</p>
+                  <ul class="device-meta">
+                    <li>Category: Batteries</li>
+                    <li>Quantity: 240 units</li>
+                    <li>Action: Hazard containment</li>
+                  </ul>
+                </article>
+                <article class="device-card risk-medium">
+                  <div class="device-top">
+                    <strong>Batch EW-198</strong>
+                    <span class="risk-chip amber">Medium risk</span>
+                  </div>
+                  <p>Mixed desktop CPUs and motherboards ready for component sorting.</p>
+                  <ul class="device-meta">
+                    <li>Category: Computers</li>
+                    <li>Quantity: 78 units</li>
+                    <li>Action: Reuse screening</li>
+                  </ul>
+                </article>
+                <article class="device-card risk-low">
+                  <div class="device-top">
+                    <strong>Batch EW-176</strong>
+                    <span class="risk-chip green">Low risk</span>
+                  </div>
+                  <p>Office monitors tagged for glass recovery and cable separation.</p>
+                  <ul class="device-meta">
+                    <li>Category: Displays</li>
+                    <li>Quantity: 61 units</li>
+                    <li>Action: Recycler dispatch</li>
+                  </ul>
+                </article>
+              </div>
+            </section>
+
+            <section class="tab-panel" id="tab-routing">
+              <div class="panel-header">
+                <div>
+                  <p class="eyebrow small">Routing Map</p>
+                  <h3>Chain of custody and formal movement</h3>
+                </div>
+                <span class="badge">Verified Partners</span>
+              </div>
+              <div class="route-board">
+                <article class="route-column">
+                  <h4>Collection Points</h4>
+                  <div class="route-card">
+                    <strong>City Drop Hub</strong>
+                    <p>Segregates household electronics and labels hazards.</p>
+                  </div>
+                  <div class="route-card">
+                    <strong>Campus Drive</strong>
+                    <p>Bulk intake from institutions and student housing.</p>
+                  </div>
+                </article>
+                <article class="route-column">
+                  <h4>Screening & Repair</h4>
+                  <div class="route-card">
+                    <strong>Refurb Lab 03</strong>
+                    <p>Tests laptops, chargers, and working boards for reuse.</p>
+                  </div>
+                  <div class="route-card">
+                    <strong>Battery Isolation Unit</strong>
+                    <p>Secures swollen and punctured cells before transport.</p>
+                  </div>
+                </article>
+                <article class="route-column">
+                  <h4>Recovery & Compliance</h4>
+                  <div class="route-card">
+                    <strong>Metal Recovery Plant</strong>
+                    <p>Extracts copper, aluminum, and precious metal fractions.</p>
+                  </div>
+                  <div class="route-card">
+                    <strong>Audit Ledger</strong>
+                    <p>Confirms final recovery outcome and compliance status.</p>
+                  </div>
+                </article>
+              </div>
+            </section>
+
+            <section class="tab-panel" id="tab-impact">
+              <div class="panel-header">
+                <div>
+                  <p class="eyebrow small">Impact Report</p>
+                  <h3>Prototype sustainability snapshot</h3>
+                </div>
+                <span class="badge">Monthly View</span>
+              </div>
+              <div class="impact-dashboard">
+                <article class="impact-card">
+                  <span>Safe disposal compliance</span>
+                  <strong>91%</strong>
+                  <div class="bar"><span style="width: 91%"></span></div>
+                </article>
+                <article class="impact-card">
+                  <span>Reuse and refurbish rate</span>
+                  <strong>46%</strong>
+                  <div class="bar"><span style="width: 46%"></span></div>
+                </article>
+                <article class="impact-card">
+                  <span>Hazard exposure reduction</span>
+                  <strong>73%</strong>
+                  <div class="bar"><span style="width: 73%"></span></div>
+                </article>
+                <article class="impact-card">
+                  <span>Material value recovered</span>
+                  <strong>$48.2K</strong>
+                  <div class="bar warm"><span style="width: 67%"></span></div>
+                </article>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="problem section" id="problem">
+        <div class="section-heading">
+          <p class="eyebrow">Core Problem</p>
+          <h2>Without tracking, electronics disappear into informal and polluting disposal systems.</h2>
+        </div>
+        <div class="issue-grid">
+          <article class="issue-card">
+            <h3>No chain of custody</h3>
+            <p>Once discarded, devices often move through unknown handlers with no record of where toxic parts end up.</p>
+          </article>
+          <article class="issue-card">
+            <h3>Unsafe worker conditions</h3>
+            <p>Manual dismantling, acid stripping, and open burning expose workers to serious health risks.</p>
+          </article>
+          <article class="issue-card">
+            <h3>Lost circular value</h3>
+            <p>Repairable devices and recoverable metals are wasted instead of being brought back into productive use.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="lifecycle section" id="lifecycle">
+        <div class="section-heading">
+          <p class="eyebrow">Lifecycle View</p>
+          <h2>How the prototype manages electronics from disposal to final outcome.</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-step">
+            <span class="step-number">1</span>
+            <h3>Register</h3>
+            <p>Every device or batch gets a digital record, quantity estimate, and hazard profile.</p>
+          </article>
+          <article class="timeline-step">
+            <span class="step-number">2</span>
+            <h3>Assess</h3>
+            <p>The system identifies items for reuse, batteries needing isolation, and high-risk waste loads.</p>
+          </article>
+          <article class="timeline-step">
+            <span class="step-number">3</span>
+            <h3>Route</h3>
+            <p>Batches are sent to formal refurbishers, dismantlers, or certified material recovery partners.</p>
+          </article>
+          <article class="timeline-step">
+            <span class="step-number">4</span>
+            <h3>Measure</h3>
+            <p>Outcomes are recorded as repaired, recovered, disposed safely, or still pending action.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="impact-strip">
+        <article>
+          <strong>Pollution Prevention</strong>
+          <p>Hazard screening reduces contamination from batteries, circuit boards, and display waste.</p>
+        </article>
+        <article>
+          <strong>Traceability</strong>
+          <p>Every handoff is visible, which reduces informal leakage and improves accountability.</p>
+        </article>
+        <article>
+          <strong>Resource Recovery</strong>
+          <p>Repair, reuse, and material extraction become measurable outcomes instead of assumptions.</p>
+        </article>
+      </section>
+
+      <section class="action section" id="action">
+        <div class="section-heading">
+          <p class="eyebrow">Prototype Input</p>
+          <h2>Submit a sample request and watch the dashboard update.</h2>
+        </div>
+        <div class="action-layout">
+          <form class="action-form" id="wasteForm">
+            <label>
+              Organization or Community
+              <input type="text" name="organization" placeholder="GreenTech Campus" required>
+            </label>
+            <label>
+              E-Waste Category
+              <select name="category" required>
+                <option value="">Select a category</option>
+                <option>Laptops and computers</option>
+                <option>Mobile phones</option>
+                <option>Batteries</option>
+                <option>Displays and monitors</option>
+                <option>Mixed electronics</option>
+              </select>
+            </label>
+            <label>
+              Estimated Quantity
+              <input type="text" name="quantity" placeholder="250 units or 1.2 tons" required>
+            </label>
+            <label>
+              Primary Concern
+              <textarea name="concern" rows="4" placeholder="Unsafe disposal, storage risk, lack of recycler visibility..." required></textarea>
+            </label>
+            <button class="button primary wide" type="submit">Add to Prototype Queue</button>
+          </form>
+
+          <aside class="action-note">
+            <h3>Live activity</h3>
+            <p>The prototype simulates how a new request is logged, prioritized, and pushed into the intake workflow.</p>
+            <div class="status-card">
+              <span class="status-dot"></span>
+              <div>
+                <strong id="statusTitle">System Ready</strong>
+                <p id="statusText">Waiting for a new tracking request.</p>
+              </div>
+            </div>
+            <div class="activity-log" id="activityLog">
+              <article class="activity-item">
+                <strong>08:40</strong>
+                <p>Refurb Lab 03 approved 18 laptops for repair and redistribution.</p>
+              </article>
+              <article class="activity-item">
+                <strong>09:15</strong>
+                <p>Battery Isolation Unit flagged a mixed load for sealed transport.</p>
+              </article>
+              <article class="activity-item">
+                <strong>10:05</strong>
+                <p>Metal Recovery Plant closed Batch EW-176 with compliant material extraction.</p>
+              </article>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
