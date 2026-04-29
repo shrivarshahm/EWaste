@@ -3,211 +3,278 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eco Guard UI Showcase</title>
+  <title>Eco Guard | E-Waste Tracking & Pollution Management</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="poster">
-    <section class="hero-banner">
-      <div class="brand-block">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top">
         <div class="brand-icon">
           <div class="globe"></div>
           <div class="leaf leaf-left"></div>
           <div class="leaf leaf-right"></div>
-          <div class="recycle-mark">♻</div>
+          <div class="recycle-mark">R</div>
         </div>
         <div>
-          <p class="brand-name">ECO GUARD</p>
-          <h1>E-Waste Tracking & Pollution Management</h1>
-          <p class="tagline">Track Waste. Monitor Pollution. Protect Future.</p>
+          <p class="brand-name">Eco Guard</p>
+          <p class="brand-subtitle">Track Waste. Monitor Pollution. Protect Future.</p>
+        </div>
+      </a>
+      <nav class="site-nav">
+        <a href="#dashboard">Dashboard</a>
+        <a href="#reporting">Reporting</a>
+        <a href="#map">Live Map</a>
+        <a href="#tracking">Pickup Tracking</a>
+        <a href="#rewards">Rewards</a>
+        <a href="#tips">Eco Tips</a>
+      </nav>
+      <a class="header-cta" href="#login">Login</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">All-In-One Environment Platform</span>
+          <h1>E-waste tracking, pollution reporting, rewards, and live monitoring in one modern website.</h1>
+          <p class="hero-text">
+            Eco Guard helps communities report e-waste, monitor AQI and water quality, schedule pickups,
+            track recycler activity, and reward eco-friendly action with Green Points.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#reporting">Start Reporting</a>
+            <a class="button secondary" href="#dashboard">Explore Dashboard</a>
+          </div>
+          <div class="feature-strip">
+            <article><strong>1,284</strong><span>Active tracked devices</span></article>
+            <article><strong>156 AQI</strong><span>Live city reading</span></article>
+            <article><strong>250 pts</strong><span>User rewards earned</span></article>
+          </div>
+        </div>
+
+        <div class="hero-panel">
+          <div class="hero-card large">
+            <div class="panel-head">
+              <span class="badge">Live Overview</span>
+              <span class="muted-chip">Bengaluru</span>
+            </div>
+            <div class="hero-stats">
+              <div>
+                <p>AQI</p>
+                <strong>156</strong>
+                <span>Unhealthy for Sensitive Groups</span>
+              </div>
+              <div>
+                <p>Open Alerts</p>
+                <strong>06</strong>
+                <span>Air, water, noise, and pickups</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-card-grid">
+            <div class="hero-card">
+              <span class="icon-chip">Report</span>
+              <strong>E-Waste & Pollution</strong>
+              <p>Upload evidence, auto-tag location, and trigger response workflows.</p>
+            </div>
+            <div class="hero-card">
+              <span class="icon-chip">Earn</span>
+              <strong>Green Rewards</strong>
+              <p>Turn eco action into cashback, coupons, and community engagement.</p>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="feature-ribbon">
-        <div class="ribbon-title">ALL-IN-ONE ENVIRONMENT APP</div>
-        <div class="feature-list">
-          <article>
-            <span class="feature-icon">📷</span>
-            <div>
-              <strong>Report</strong>
-              <p>E-Waste & Pollution</p>
+    <section class="section" id="login">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Access</span>
+          <h2>Clean login experience with quick onboarding.</h2>
+        </div>
+        <div class="login-layout">
+          <div class="login-card">
+            <h3>Welcome Back</h3>
+            <p class="section-copy">Log in with your email or phone number to continue tracking waste, monitoring alerts, and redeeming rewards.</p>
+            <div class="input-grid">
+              <div class="input-field">Email or Phone</div>
+              <div class="input-field">Password</div>
             </div>
+            <div class="login-actions">
+              <a href="#0" class="text-link">Forgot password?</a>
+              <button class="button primary" type="button">Login</button>
+            </div>
+            <div class="divider"><span>or continue with</span></div>
+            <div class="social-row">
+              <span>Google</span>
+              <span>Facebook</span>
+              <span>Apple</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <h3>Why users join Eco Guard</h3>
+            <ul class="feature-list">
+              <li>Report e-waste and pollution from one place</li>
+              <li>Track pickups and recycler status in real time</li>
+              <li>See AQI updates and environmental alerts</li>
+              <li>Earn Green Points for every verified action</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft-section" id="dashboard">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Dashboard</span>
+          <h2>Website-first command center for monitoring action across the city.</h2>
+        </div>
+        <div class="dashboard-grid">
+          <aside class="sidebar-card">
+            <h3>Quick Actions</h3>
+            <div class="action-list">
+              <a class="action-item mint" href="#reporting"><strong>Report E-Waste</strong><span>Upload and tag device waste</span></a>
+              <a class="action-item blue" href="#reporting"><strong>Report Pollution</strong><span>Flag air, water, garbage, or noise</span></a>
+              <a class="action-item sky" href="#tracking"><strong>Schedule Pickup</strong><span>Assign a recycler pickup slot</span></a>
+              <a class="action-item sand" href="#map"><strong>Live Map</strong><span>View AQI markers across locations</span></a>
+            </div>
+          </aside>
+
+          <div class="dashboard-main">
+            <div class="metrics-grid">
+              <article class="metric-card dark">
+                <span>AQI</span>
+                <strong>156</strong>
+                <p>Koramangala: unhealthy for sensitive groups</p>
+              </article>
+              <article class="metric-card dark">
+                <span>Green Points</span>
+                <strong>250</strong>
+                <p>+20 points from a verified air pollution report</p>
+              </article>
+              <article class="metric-card">
+                <span>E-Waste Reports</span>
+                <strong>84</strong>
+                <p>22 pending pickups, 62 processed this week</p>
+              </article>
+              <article class="metric-card">
+                <span>Pollution Alerts</span>
+                <strong>12</strong>
+                <p>3 high AQI, 2 water, 4 noise, 3 garbage hotspots</p>
+              </article>
+            </div>
+
+            <div class="activity-grid">
+              <article class="panel-card">
+                <div class="panel-head">
+                  <h3>Recent Alerts</h3>
+                  <a href="#alerts" class="text-link">See all</a>
+                </div>
+                <div class="stack-list">
+                  <div class="alert-row soft-red"><strong>High AQI Alert</strong><span>AQI 186 in Koramangala</span></div>
+                  <div class="alert-row soft-blue"><strong>Water Quality Warning</strong><span>Unsafe pH in Bellandur Lake</span></div>
+                  <div class="alert-row soft-purple"><strong>Noise Threshold Crossed</strong><span>78 dB near Silk Board</span></div>
+                </div>
+              </article>
+
+              <article class="panel-card">
+                <div class="panel-head">
+                  <h3>Live Intake Queue</h3>
+                  <span class="muted-chip">Updated 2 min ago</span>
+                </div>
+                <div class="queue-list">
+                  <div class="queue-item">
+                    <strong>EW-204</strong>
+                    <span>Damaged lithium batteries, 240 units</span>
+                    <em class="status danger">High risk</em>
+                  </div>
+                  <div class="queue-item">
+                    <strong>EW-198</strong>
+                    <span>Desktop CPUs and boards, 78 units</span>
+                    <em class="status warning">Medium risk</em>
+                  </div>
+                  <div class="queue-item">
+                    <strong>EW-176</strong>
+                    <span>Office monitors, 61 units</span>
+                    <em class="status success">Low risk</em>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="reporting">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Reporting</span>
+          <h2>Dedicated website workflows for e-waste and pollution reports.</h2>
+        </div>
+        <div class="report-grid">
+          <article class="form-card">
+            <div class="panel-head">
+              <h3>Report E-Waste</h3>
+              <span class="badge">Rewards Enabled</span>
+            </div>
+            <div class="upload-box">
+              <strong>Upload E-Waste Photo</strong>
+              <p>Tap or drag files here</p>
+            </div>
+            <div class="chip-grid">
+              <span class="chip">Mobile</span>
+              <span class="chip">Battery</span>
+              <span class="chip">Laptop</span>
+              <span class="chip">TV / Monitor</span>
+              <span class="chip">Charger</span>
+              <span class="chip">Others</span>
+            </div>
+            <div class="input-field">Auto Location: Koramangala, Bengaluru</div>
+            <button class="button primary" type="button">Schedule Pickup</button>
           </article>
-          <article>
-            <span class="feature-icon">📍</span>
-            <div>
-              <strong>Track</strong>
-              <p>Collection & Action</p>
+
+          <article class="form-card">
+            <div class="panel-head">
+              <h3>Report Pollution</h3>
+              <span class="badge">Action Monitoring</span>
             </div>
-          </article>
-          <article>
-            <span class="feature-icon">📈</span>
-            <div>
-              <strong>Monitor</strong>
-              <p>AQI & Water Quality</p>
+            <div class="upload-box">
+              <strong>Upload Photo or Video</strong>
+              <p>Attach evidence for review</p>
             </div>
-          </article>
-          <article>
-            <span class="feature-icon">🏆</span>
-            <div>
-              <strong>Earn</strong>
-              <p>Green Rewards</p>
+            <div class="chip-grid">
+              <span class="chip active-soft">Air Pollution</span>
+              <span class="chip">Water Pollution</span>
+              <span class="chip">Garbage Waste</span>
+              <span class="chip">Noise Pollution</span>
             </div>
+            <div class="input-field">Location Tag: Koramangala, Bengaluru</div>
+            <button class="button primary" type="button">Submit Report</button>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="screens-grid">
-      <article class="screen-card">
-        <p class="screen-label">1. Splash Screen</p>
-        <div class="phone splash-screen">
-          <div class="status-bar"><span>9:41</span><span>◔ ︳📶</span></div>
-          <div class="screen-body center-body">
-            <div class="app-wordmark">ECO GUARD</div>
-            <p class="splash-copy">Clean Environment.<br>Smart Future.</p>
-            <div class="scene">
-              <div class="cloud cloud-one"></div>
-              <div class="cloud cloud-two"></div>
-              <div class="hill"></div>
-              <div class="windmill left"></div>
-              <div class="windmill center"></div>
-              <div class="tower"></div>
-              <div class="earth-badge">♻</div>
-            </div>
-            <button class="primary-button">Get Started</button>
-          </div>
+    <section class="section soft-section" id="map">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Live Map</span>
+          <h2>Interactive-style pollution overview with clear AQI zones.</h2>
         </div>
-      </article>
-
-      <article class="screen-card">
-        <p class="screen-label">2. Login / Sign Up</p>
-        <div class="phone">
-          <div class="status-bar"><span>9:41</span><span>◔ ︳📶</span></div>
-          <div class="screen-body">
-            <h2>Welcome Back!</h2>
-            <p class="subtle">Login to continue</p>
-            <div class="form-stack">
-              <div class="input-field">👤 <span>Email or Phone</span></div>
-              <div class="input-field">🔒 <span>Password</span> <em>👁</em></div>
+        <div class="map-layout">
+          <article class="map-card">
+            <div class="panel-head">
+              <h3>Live Pollution Map</h3>
+              <div class="search-pill">Search location...</div>
             </div>
-            <a class="inline-link" href="#0">Forgot Password?</a>
-            <button class="primary-button">Login</button>
-            <div class="divider"><span>or</span></div>
-            <button class="outline-button">Create New Account</button>
-            <div class="social-row">
-              <span>G</span>
-              <span>f</span>
-              <span></span>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <article class="screen-card">
-        <p class="screen-label">3. Home Dashboard</p>
-        <div class="phone">
-          <div class="status-bar"><span>9:41</span><span>◔ ︳📶</span></div>
-          <div class="screen-body">
-            <div class="top-row">
-              <span>☰</span>
-              <span>🔔</span>
-            </div>
-            <h2>Hi, Arjun! 👋</h2>
-            <p class="subtle">Let's make Earth greener today.</p>
-            <div class="metric-row">
-              <div class="metric-card dark">
-                <span>AQI</span>
-                <strong>156</strong>
-                <p>Unhealthy for Sensitive Groups</p>
-              </div>
-              <div class="metric-card dark">
-                <span>Green Points</span>
-                <strong>250</strong>
-                <p>+20 earned today</p>
-              </div>
-            </div>
-            <h3>Quick Actions</h3>
-            <div class="quick-grid">
-              <div class="quick-action mint"><span>♻</span><p>Report E-Waste</p></div>
-              <div class="quick-action blue"><span>🏭</span><p>Report Pollution</p></div>
-              <div class="quick-action sky"><span>🚚</span><p>Schedule Pickup</p></div>
-              <div class="quick-action sand"><span>🗺</span><p>Live Map</p></div>
-            </div>
-            <div class="nav-bar">
-              <span class="active">Home</span>
-              <span>Track</span>
-              <span>Rewards</span>
-              <span>Tips</span>
-              <span>Profile</span>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <article class="screen-card">
-        <p class="screen-label">4. Report E-Waste</p>
-        <div class="phone">
-          <div class="status-bar"><span>9:41</span><span>◔ ︳📶</span></div>
-          <div class="screen-body">
-            <div class="top-row"><span>←</span><strong>Report E-Waste</strong><span></span></div>
-            <p class="subtle">Help recycle. Earn rewards.</p>
-            <div class="upload-box">
-              <span>📷</span>
-              <p>Tap to Upload<br>or Drag & Drop</p>
-            </div>
-            <h3>Select Category</h3>
-            <div class="pill-grid">
-              <span class="pill">📱 Mobile</span>
-              <span class="pill">💻 Laptop</span>
-              <span class="pill">🔋 Battery</span>
-              <span class="pill">🖥 TV / Monitor</span>
-              <span class="pill">🔌 Charger</span>
-              <span class="pill">⋯ Others</span>
-            </div>
-            <h3>Pickup Location</h3>
-            <div class="location-card">📍 Koramangala, Bengaluru <span>⚙</span></div>
-            <button class="primary-button">Schedule Pickup</button>
-          </div>
-        </div>
-      </article>
-
-      <article class="screen-card">
-        <p class="screen-label">5. Report Pollution</p>
-        <div class="phone">
-          <div class="status-bar"><span>9:41</span><span>◔ ︳📶</span></div>
-          <div class="screen-body">
-            <div class="top-row"><span>←</span><strong>Report Pollution</strong><span></span></div>
-            <p class="subtle">Help us take action.</p>
-            <div class="upload-box">
-              <span>📹</span>
-              <p>Upload photo or video</p>
-            </div>
-            <h3>Select Pollution Type</h3>
-            <div class="pill-grid pollution-grid">
-              <span class="pill active-soft">🌫 Air Pollution</span>
-              <span class="pill">💧 Water Pollution</span>
-              <span class="pill">🗑 Garbage Waste</span>
-              <span class="pill">🔊 Noise Pollution</span>
-              <span class="pill">⋯ Others</span>
-            </div>
-            <h3>Location</h3>
-            <div class="location-card">📍 Koramangala, Bengaluru <span>⚙</span></div>
-            <button class="primary-button">Submit Report</button>
-          </div>
-        </div>
-      </article>
-
-      <article class="screen-card">
-        <p class="screen-label">6. Live Pollution Map</p>
-        <div class="phone">
-          <div class="status-bar"><span>9:41</span><span>◔ ︳📶</span></div>
-          <div class="screen-body">
-            <div class="top-row"><span>☰</span><strong>Live Pollution Map</strong><span>⎘</span></div>
-            <div class="search-box">🔍 Search location...</div>
             <div class="map-box">
               <div class="marker yellow" style="top: 22%; left: 14%;">142</div>
               <div class="marker red" style="top: 18%; left: 58%;">186</div>
@@ -218,135 +285,132 @@
               <p class="map-label two">Koramangala</p>
               <p class="map-label three">HSR Layout</p>
             </div>
-            <div class="legend">
-              <span><i class="good"></i>Good</span>
-              <span><i class="moderate"></i>Moderate</span>
-              <span><i class="hazard"></i>Hazardous</span>
+          </article>
+          <article class="legend-card">
+            <h3>AQI Legend</h3>
+            <div class="legend-list">
+              <div><i class="good"></i><span>Good</span><strong>0-50</strong></div>
+              <div><i class="moderate"></i><span>Moderate</span><strong>51-100</strong></div>
+              <div><i class="warning"></i><span>Unhealthy</span><strong>101-200</strong></div>
+              <div><i class="hazard"></i><span>Hazardous</span><strong>201-300</strong></div>
             </div>
-            <button class="primary-button">View Area Details</button>
-          </div>
+            <button class="button primary" type="button">View Area Details</button>
+          </article>
         </div>
-      </article>
+      </div>
+    </section>
 
-      <article class="screen-card">
-        <p class="screen-label">7. Alerts</p>
-        <div class="phone">
-          <div class="status-bar"><span>9:41</span><span>◔ ︳📶</span></div>
-          <div class="screen-body">
-            <div class="top-row"><span>←</span><strong>Alerts</strong><span></span></div>
-            <div class="alert-card soft-red">
-              <span class="alert-icon">☁</span>
-              <div>
-                <strong>High AQI Alert</strong>
-                <p>AQI is 186 in Koramangala.<br>Today, 10:30 AM</p>
-              </div>
-            </div>
-            <div class="alert-card soft-blue">
-              <span class="alert-icon">💧</span>
-              <div>
-                <strong>Water Contamination</strong>
-                <p>pH level unsafe in Bellandur Lake.<br>Yesterday, 06:15 PM</p>
-              </div>
-            </div>
-            <div class="alert-card soft-purple">
-              <span class="alert-icon">🔊</span>
-              <div>
-                <strong>High Noise Levels</strong>
-                <p>78 dB detected near Silk Board.<br>12 Aug 2024</p>
-              </div>
-            </div>
-            <div class="alert-card soft-green">
-              <span class="alert-icon">✔</span>
-              <div>
-                <strong>E-Waste Pickup Scheduled</strong>
-                <p>Your pickup is booked for tomorrow, 10:00 AM.</p>
-              </div>
-            </div>
-          </div>
+    <section class="section" id="alerts">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Alerts</span>
+          <h2>Environmental warnings and report status updates in one feed.</h2>
         </div>
-      </article>
+        <div class="alerts-grid">
+          <article class="alert-card soft-red">
+            <strong>High AQI Alert</strong>
+            <p>AQI is 186 in Koramangala.</p>
+            <span>Today, 10:30 AM</span>
+          </article>
+          <article class="alert-card soft-blue">
+            <strong>Water Contamination</strong>
+            <p>Unsafe pH level reported in Bellandur Lake.</p>
+            <span>Yesterday, 06:15 PM</span>
+          </article>
+          <article class="alert-card soft-purple">
+            <strong>High Noise Levels</strong>
+            <p>78 dB detected near Silk Board.</p>
+            <span>12 Aug 2024</span>
+          </article>
+          <article class="alert-card soft-green">
+            <strong>E-Waste Pickup Scheduled</strong>
+            <p>Your recycler visit is confirmed for tomorrow.</p>
+            <span>Tomorrow, 10:00 AM</span>
+          </article>
+        </div>
+      </div>
+    </section>
 
-      <article class="screen-card">
-        <p class="screen-label">8. Track Pickup</p>
-        <div class="phone">
-          <div class="status-bar"><span>9:41</span><span>◔ ︳📶</span></div>
-          <div class="screen-body">
-            <div class="top-row"><span>←</span><strong>Track Collection</strong><span></span></div>
+    <section class="section soft-section" id="tracking">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Pickup Tracking</span>
+          <h2>Track each collection request from request to completion.</h2>
+        </div>
+        <div class="tracking-layout">
+          <article class="timeline-card">
             <div class="pickup-id">Pickup ID: <strong>#EW123456</strong></div>
             <div class="timeline">
-              <div class="timeline-item done"><span>✓</span><div><strong>Request Received</strong><p>14 Aug, 10:30 AM</p></div></div>
-              <div class="timeline-item done"><span>✓</span><div><strong>Assigned to Recycler</strong><p>14 Aug, 11:00 AM</p></div></div>
-              <div class="timeline-item active"><span>🚚</span><div><strong>On the Way</strong><p>15 Aug, 09:00 AM</p></div></div>
-              <div class="timeline-item pending"><span>○</span><div><strong>Completed</strong><p>Expected by 10:15 AM</p></div></div>
+              <div class="timeline-item done"><span>1</span><div><strong>Requested</strong><p>14 Aug, 10:30 AM</p></div></div>
+              <div class="timeline-item done"><span>2</span><div><strong>Assigned</strong><p>14 Aug, 11:00 AM</p></div></div>
+              <div class="timeline-item active"><span>3</span><div><strong>On the Way</strong><p>15 Aug, 09:00 AM</p></div></div>
+              <div class="timeline-item pending"><span>4</span><div><strong>Completed</strong><p>Expected by 10:15 AM</p></div></div>
             </div>
-            <div class="recycler-card">
-              <div class="avatar">RK</div>
-              <div>
-                <strong>Rahul Kumar</strong>
-                <p>Recycler Partner</p>
-              </div>
-              <span class="call-chip">📞</span>
+          </article>
+          <article class="recycler-card">
+            <div class="avatar">RK</div>
+            <div>
+              <strong>Rahul Kumar</strong>
+              <p>Recycler Partner</p>
+              <span>Verified collection partner with compliant disposal record.</span>
             </div>
-          </div>
+            <button class="button secondary" type="button">Call Recycler</button>
+          </article>
         </div>
-      </article>
+      </div>
+    </section>
 
-      <article class="screen-card">
-        <p class="screen-label">9. Rewards</p>
-        <div class="phone">
-          <div class="status-bar"><span>9:41</span><span>◔ ︳📶</span></div>
-          <div class="screen-body">
-            <div class="top-row"><span>←</span><strong>Rewards</strong><span></span></div>
+    <section class="section" id="rewards">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Rewards</span>
+          <h2>Green Points keep citizens engaged and returning.</h2>
+        </div>
+        <div class="rewards-layout">
+          <article class="rewards-summary">
             <div class="reward-hero">
-              <span>🏆</span>
               <div>
                 <p>Green Points</p>
                 <strong>250</strong>
               </div>
+              <span>Reward Wallet</span>
             </div>
             <div class="progress-card">
-              <div class="progress-meta"><span>Next reward unlock</span><strong>320 / 500 pts</strong></div>
+              <div class="progress-meta"><span>Next reward unlock</span><strong>320 / 500 points</strong></div>
               <div class="progress-bar"><span></span></div>
             </div>
-            <div class="reward-list">
-              <div class="reward-item"><span>💸</span><div><strong>Paytm Cashback</strong><p>150 points</p></div><button>Redeem</button></div>
-              <div class="reward-item"><span>🛍</span><div><strong>Amazon / Flipkart Coupon</strong><p>220 points</p></div><button>Redeem</button></div>
-              <div class="reward-item"><span>🎬</span><div><strong>Movie Tickets</strong><p>300 points</p></div><button>Redeem</button></div>
-            </div>
-            <div class="nav-bar">
-              <span>Home</span>
-              <span>Track</span>
-              <span class="active">Rewards</span>
-              <span>Tips</span>
-              <span>Profile</span>
-            </div>
+          </article>
+          <div class="reward-grid">
+            <article class="reward-item"><strong>Paytm Cashback</strong><p>Redeem at 150 points</p><button class="button secondary" type="button">Redeem</button></article>
+            <article class="reward-item"><strong>Amazon / Flipkart Coupons</strong><p>Redeem at 220 points</p><button class="button secondary" type="button">Redeem</button></article>
+            <article class="reward-item"><strong>Movie Tickets</strong><p>Redeem at 300 points</p><button class="button secondary" type="button">Redeem</button></article>
           </div>
         </div>
-      </article>
+      </div>
+    </section>
 
-      <article class="screen-card">
-        <p class="screen-label">10. Eco Tips</p>
-        <div class="phone">
-          <div class="status-bar"><span>9:41</span><span>◔ ︳📶</span></div>
-          <div class="screen-body">
-            <div class="top-row"><span>←</span><strong>Eco Tips</strong><span></span></div>
-            <div class="tip-hero">
-              <div>
-                <strong>Small Steps Make a Big Difference!</strong>
-                <p>Daily tips to reduce waste and pollution.</p>
-              </div>
-              <span>🌍</span>
+    <section class="section soft-section" id="tips">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Eco Tips</span>
+          <h2>Daily content that supports awareness and community sharing.</h2>
+        </div>
+        <div class="tips-layout">
+          <article class="tips-hero">
+            <div>
+              <h3>Small steps make a big difference.</h3>
+              <p>Use Eco Guard to pair action, awareness, and rewards in one platform.</p>
             </div>
-            <div class="tip-list">
-              <div class="tip-item"><span>♻</span><div><strong>Recycle Old Electronics</strong><p>Reduce e-waste and save resources.</p></div></div>
-              <div class="tip-item"><span>🚌</span><div><strong>Use Public Transport</strong><p>Lower emissions and save fuel.</p></div></div>
-              <div class="tip-item"><span>👜</span><div><strong>Say No to Single-Use Plastic</strong><p>Carry a reusable bag.</p></div></div>
-              <div class="tip-item"><span>🌱</span><div><strong>Plant More Trees</strong><p>Trees clean the air we breathe.</p></div></div>
-            </div>
-            <button class="primary-button">Share & Spread Awareness</button>
+            <button class="button primary" type="button">Share Awareness</button>
+          </article>
+          <div class="tips-grid">
+            <article class="tip-item"><strong>Recycle Old Electronics</strong><p>Reduce e-waste and recover valuable materials.</p></article>
+            <article class="tip-item"><strong>Use Public Transport</strong><p>Cut emissions and improve air quality.</p></article>
+            <article class="tip-item"><strong>Say No to Single-Use Plastic</strong><p>Carry reusable alternatives wherever possible.</p></article>
+            <article class="tip-item"><strong>Plant More Trees</strong><p>Trees support cleaner air and cooler neighborhoods.</p></article>
           </div>
         </div>
-      </article>
+      </div>
     </section>
   </main>
 </body>
